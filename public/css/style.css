@@ -1,0 +1,19 @@
+.btn-guardar{
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(99, 11, 80, 0.978);
+    border: 0;
+    box-sizing: border-box;
+    cursor:pointer;
+    font-weight: bold;
+    font-size: large;
+    color:rgb(247, 183, 239);
+}
+.btn-guardar:hover, .btn-guardar:active{
+    color:white;
+    background-color: rgb(75, 2, 67);
+    border-color: rgb(90, 5, 87);
+}
+.btn-guardar:focus{
+    box-shadow: 0 0 0 3px rgba(red, green, blue, alpha)
+}
