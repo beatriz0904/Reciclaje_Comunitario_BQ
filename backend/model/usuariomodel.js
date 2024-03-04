@@ -6,6 +6,7 @@ const usuarioSchema = new Schema({
     nombre: {type: String },
     direccion:{type:String },
     correo:{type:String },
+    contraseña: {type: String},
     puntos_acumulados:{type:Number}
 }, {versionKey:false});
 

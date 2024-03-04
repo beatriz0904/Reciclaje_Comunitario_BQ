@@ -1,0 +1,50 @@
+/* styles.css */
+
+body {
+    background-color: #28a745; /* Fondo verde */
+    color: #fff; /* Texto blanco */
+  }
+ 
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco transparente */
+    padding: 20px;
+    border: 2px solid #28a745; /* Borde verde */
+    border-radius: 10px; /* Borde redondeado */
+  }
+  
+  .login-title {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent; /* Fondo transparente */
+    border-bottom: 2px solid #28a745; /* Borde inferior verde */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #218838; /* Verde oscuro */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1e7e34; /* Verde más oscuro al pasar el ratón */
+  }
+  

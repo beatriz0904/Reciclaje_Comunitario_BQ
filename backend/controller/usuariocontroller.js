@@ -7,6 +7,7 @@ function crear(req, res){
         nombre: req.body.nombre,
         direccion: req.body.direccion,
         correo: req.body.correo,
+        contraseña:req.body.contraseña,
         puntos_acumulados: req.body.puntos_acumulados
         
     })
@@ -33,10 +34,11 @@ function editar(req, res){
     const nombre = req.body.nombre_editar
     const direccion = req.body.direccion_editar
     const correo = req.body.correo_editar
+    const contraseña=req.body.contrase_editar
     const puntos_acumulados = req.body.puntos_acumulados_editar
 
    
- Usuario.findByIdAndUpdate(id, { nombre: nombre, direccion: direccion, correo: correo, puntos_acumulados: puntos_acumulados }).then(() => {
+ Usuario.findByIdAndUpdate(id, { nombre: nombre, direccion: direccion, correo: correo, contraseña:contraseña, puntos_acumulados: puntos_acumulados }).then(() => {
     res.redirect('/');
 }).catch(err => res.status(500).send({ err }));
 
