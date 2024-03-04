@@ -1,0 +1,24 @@
+<form (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" [(ngModel)]="usuario.nombre" name="nombre">
+    </div>
+    <div class="form-group">
+      <label for="direccion">Dirección:</label>
+      <input type="text" class="form-control" id="direccion" [(ngModel)]="usuario.direccion" name="direccion">
+    </div>
+    <div class="form-group">
+      <label for="correo">Correo:</label>
+      <input type="email" class="form-control" id="correo" [(ngModel)]="usuario.correo" name="correo">
+    </div>
+    <div class="form-group">
+      <label for="contraseña">Contraseña:</label>
+      <input type="password" class="form-control" id="contraseña" [(ngModel)]="usuario.contraseña" name="contraseña">
+    </div>
+    <div class="form-group">
+      <label for="puntos_acumulados">Puntos acumulados:</label>
+      <input type="number" class="form-control" id="puntos_acumulados" [(ngModel)]="usuario.puntos_acumulados" name="puntos_acumulados">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+  
