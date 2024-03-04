@@ -1,0 +1,16 @@
+<form (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="titulo">Título:</label>
+      <input type="text" class="form-control" id="titulo" [(ngModel)]="campana.titulo" name="titulo">
+    </div>
+    <div class="form-group">
+      <label for="descripcion">Descripción:</label>
+      <textarea class="form-control" id="descripcion" [(ngModel)]="campana.descripcion" name="descripcion"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="fecha">Fecha:</label>
+      <input type="date" class="form-control" id="fecha" [(ngModel)]="campana.fecha" name="fecha">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+  

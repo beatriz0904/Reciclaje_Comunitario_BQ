@@ -1,0 +1,20 @@
+<form (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" [(ngModel)]="recompensa.nombre" name="nombre">
+    </div>
+    <div class="form-group">
+      <label for="descripcion">Descripción:</label>
+      <textarea class="form-control" id="descripcion" [(ngModel)]="recompensa.descripcion" name="descripcion"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="puntos">Puntos requeridos:</label>
+      <input type="text" class="form-control" id="puntos" [(ngModel)]="recompensa.puntos_requeridos" name="puntos">
+    </div>
+    <div class="form-group">
+      <label for="stocks">Stocks disponibles:</label>
+      <input type="number" class="form-control" id="stocks" [(ngModel)]="recompensa.stocks_disponibles" name="stocks">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+  
