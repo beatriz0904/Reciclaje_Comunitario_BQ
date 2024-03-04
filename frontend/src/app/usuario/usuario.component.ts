@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { UsuarioService } from '../usuario.service'; // Asegúrate de importar el servicio correcto
 import { Usuario } from '../model/usuario'; // Asegúrate de importar el modelo correcto
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'usuario',
@@ -46,6 +47,7 @@ export class CreateUsuarioComponent implements OnInit {
         this.usuarioForm.reset();
       });
     } else {
+      console.log(USUARIO);
       this.usuarioService.saveUsuario(USUARIO).subscribe(data => {
         this.router.navigate(['/']);
       }, error => {
@@ -57,6 +59,7 @@ export class CreateUsuarioComponent implements OnInit {
 
   Edit() {
     if (this.id !== null) {
+      this.title = 'Edit Usuario';
       this.usuarioService.getUsuario(this.id).subscribe(data => {
         this.usuarioForm.setValue({
           nombre: data.nombre,

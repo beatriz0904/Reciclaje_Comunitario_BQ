@@ -1,24 +1,26 @@
-<form (ngSubmit)="submitForm()">
+<div class="container">
+  <h1>{{ title }}</h1>
+  <form [formGroup]="usuarioForm" (ngSubmit)="addUsuario()">
     <div class="form-group">
       <label for="nombre">Nombre:</label>
-      <input type="text" class="form-control" id="nombre" [(ngModel)]="usuario.nombre" name="nombre">
+      <input type="text" formControlName="nombre" id="nombre" class="form-control" placeholder="Nombre" required>
     </div>
     <div class="form-group">
       <label for="direccion">Dirección:</label>
-      <input type="text" class="form-control" id="direccion" [(ngModel)]="usuario.direccion" name="direccion">
+      <input type="text" formControlName="direccion" id="direccion" class="form-control" placeholder="Dirección" required>
     </div>
     <div class="form-group">
-      <label for="correo">Correo:</label>
-      <input type="email" class="form-control" id="correo" [(ngModel)]="usuario.correo" name="correo">
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" formControlName="correo" id="correo" class="form-control" placeholder="Correo electrónico" required>
     </div>
     <div class="form-group">
       <label for="contraseña">Contraseña:</label>
-      <input type="password" class="form-control" id="contraseña" [(ngModel)]="usuario.contraseña" name="contraseña">
+      <input type="password" formControlName="contraseña" id="contraseña" class="form-control" placeholder="Contraseña" required>
     </div>
     <div class="form-group">
       <label for="puntos_acumulados">Puntos acumulados:</label>
-      <input type="number" class="form-control" id="puntos_acumulados" [(ngModel)]="usuario.puntos_acumulados" name="puntos_acumulados">
+      <input type="number" formControlName="puntos_acumulados" id="puntos_acumulados" class="form-control" placeholder="Puntos acumulados" required>
     </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" class="btn btn-primary">Guardar</button>
   </form>
-  
+</div>

@@ -4,16 +4,22 @@ body {
     padding: 0;
   }
   
+  .logo {
+    width: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-right: 10px; /* Ajusta el margen si es necesario */
+  }
+  
   header {
-    background-color: #09a70e;
-    color: white;
+    background-color: #f5f6f5;
+    color: rgb(96, 185, 55);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
   
   nav {
-    background-color: #887219;
-    color: white;
+    background-color: #205c07;
+    color: rgb(218, 209, 35);
     text-align: center;
     padding: 10px;
   }
@@ -26,23 +32,41 @@ body {
   
   nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 55px;
   }
   
   nav ul li a {
-    color: white;
+    color: rgb(133, 216, 17);
     text-decoration: none;
   }
   
   nav ul li a:hover {
     text-decoration: underline;
   }
+  /* Estilo para las secciones */
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+}
+
+/* Estilo para el título de las secciones */
+section h2 {
+  color: #1fa42a;
+}
+
+/* Estilo para el texto de las secciones */
+section p {
+  color: #666;
+}
+
   
   footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     position: fixed;
     bottom: 0;
     width: 100%;
