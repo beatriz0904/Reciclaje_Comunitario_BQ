@@ -13,5 +13,5 @@ export class Usuario {
       this.contraseña = contraseña;
       this.puntos_acumulados = puntos_acumulados;
     }
-  }
+  } 
   

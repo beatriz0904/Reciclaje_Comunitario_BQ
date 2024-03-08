@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AccionReciclaje } from '../models/accion-reciclaje';
+import { AccionReciclaje } from '../model/accion-reciclaje';
 import { AccionReciclajeService } from '../services/accion-reciclaje.service';
 
 @Component({
